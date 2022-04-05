@@ -764,7 +764,7 @@ html{
     text-decoration: none;
     color: var(--blanco);
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .b-paciente i{
@@ -792,6 +792,7 @@ html{
     height: 40px;
     border-radius: 5px;
     font-size: 12px;
+    width: 50%;
 }
 
 .b-editar{
