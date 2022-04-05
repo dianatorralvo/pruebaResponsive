@@ -752,13 +752,14 @@ html{
 
 #botonesPaciente{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
     padding: 0.5rem;
 }
 
 .b-paciente a{
-    background-color: var(--rojo);
+    background-color: var(--naranja);
     padding: 0.5rem;
     text-decoration: none;
     color: var(--blanco);
@@ -788,7 +789,7 @@ html{
 
 .b-buscar input{
     border: 2px solid var(--celeste);
-    width: 70px;
+    width: 100px;
     height: 40px;
     border-radius: 5px;
     font-size: 12px;
@@ -829,7 +830,7 @@ html{
 }
 
 
-.p-titulo h1{
+.p-titulo{
     font-size: 30px;
     font-weight: lighter;
     color: var(--azul-oscuro);
@@ -838,13 +839,12 @@ html{
     position: relative;
 }
 
-.p-titulo h1 span{
+.p-titulo span{
     position: absolute;
     right: 0;
     width: 0;
     background: var(--blanco);
     border-left: 1px solid black;
-
     animation: maquina 5s infinite alternate steps(10);
 }
 
@@ -907,9 +907,12 @@ html{
     margin: 0 1rem;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) {
     #botonesPaciente{
         justify-content: space-between;
+    }
+    .b-buscar input{
+        width: 180px;
     }
 }
 
@@ -979,6 +982,10 @@ html{
         padding: 0.4rem;
     }
     
+    .b-buscar input{
+        width: 150px;
+    }
+
     .table{
         margin-bottom: 5rem;
     }
