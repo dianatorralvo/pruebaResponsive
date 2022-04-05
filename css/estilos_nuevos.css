@@ -752,6 +752,7 @@ html{
 
 #botonesPaciente{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 2rem;
     padding: 0.5rem;
@@ -788,6 +789,7 @@ html{
 
 .b-buscar input{
     border: 2px solid var(--celeste);
+    width: 70px;
     height: 40px;
     border-radius: 5px;
     font-size: 12px;
@@ -1079,7 +1081,7 @@ html{
 
 .menu-lado{
     background-color: var(--azul-oscuro);
-    height: 23vh;
+    height: 200px;
 }
 
 .menu-img{
