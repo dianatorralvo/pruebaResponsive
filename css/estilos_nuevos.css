@@ -752,10 +752,9 @@ html{
 
 #botonesPaciente{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .b-paciente a{
@@ -1081,7 +1080,7 @@ html{
 
 .menu-lado{
     background-color: var(--azul-oscuro);
-    height: 27vh;
+    height: 22vh;
 }
 
 .menu-img{
@@ -1192,7 +1191,7 @@ html{
     font-size: 30px;
     font-weight: lighter;
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 12rem;
     margin-bottom: 2rem;
 
 }
@@ -1200,6 +1199,7 @@ html{
 .busqueda{
     display: flex;
     justify-content: center;
+    margin-bottom: 20rem;
 }
 
 .i-busqueda{
