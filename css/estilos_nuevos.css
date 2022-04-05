@@ -752,14 +752,13 @@ html{
 
 #botonesPaciente{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     margin-top: 2rem;
     padding: 0.5rem;
 }
 
 .b-paciente a{
-    background-color: var(--naranja);
+    background-color: var(--rojo);
     padding: 0.5rem;
     text-decoration: none;
     color: var(--blanco);
