@@ -48,6 +48,7 @@ html{
     .botones1{
         display: flex;
         align-items: center;
+        margin-bottom: 1rem;
     }
     
     .boton {
@@ -62,7 +63,6 @@ html{
         cursor: pointer;
         transition: .3seg ease all;
         border-radius: 20px;
-        margin-top: 1rem;
         position: relative;
         overflow: hidden;
     }
@@ -299,6 +299,7 @@ html{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
+            align-items: center;
             margin-top: 1rem;
         }
         
@@ -309,6 +310,11 @@ html{
         .boton{
             width: 150px;
         }
+
+.botones1{
+    margin-bottom: 0;
+}
+
 
         .botones1 p{
             margin-left: 0.3rem;
@@ -443,6 +449,11 @@ html{
 
     @media screen and (min-width: 1024px) {
         
+        .botones{
+            margin-right: 3rem;
+            margin-left: 3rem;
+        }
+
         .botones img{
             width: 30px;
         }
@@ -472,6 +483,16 @@ html{
 
     @media screen and (min-width: 1200px) {
         
+        .botones{
+            margin-right: 3rem;
+            margin-left: 3rem;
+        }
+
+        .botones1{
+            margin-right: 5rem;
+        }
+
+
         .botones p{
             color: var(--gris);
             font-size: 16px;
