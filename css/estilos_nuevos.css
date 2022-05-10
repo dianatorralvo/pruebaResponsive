@@ -1570,13 +1570,11 @@ border: 2px solid var(--celeste);
     border-radius: 15px;
     outline: none;
     border: none;
-}
-
-.guardar a{
-    text-decoration: none;
     color: var(--blanco);
     font-weight: 600;
 }
+
+
 
 
 @media screen and (min-width:1024px) {
@@ -1692,4 +1690,139 @@ border: 2px solid var(--celeste);
         margin: 1rem 1rem;
     }
     
+}
+
+/*---------------------------------------------------------VENTANAS MODAL----------------------------------------------*/
+.res{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(103, 103, 103, 0.582);
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition:  opacity .5s;
+
+}
+
+.res1{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(103, 103, 103, 0.582);
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition:  opacity .5s;
+
+}
+
+
+.resModal{
+    margin: auto;
+    background-color: #fff;
+    width: 85%;
+    max-width: 600px;
+    max-height: 90%;
+    padding: 1rem;
+    border-radius: 1em;
+    
+}
+
+.resModal1{
+    margin: auto;
+    background-color: #fff;
+    width: 85%;
+    max-width: 600px;
+    max-height: 90%;
+    padding: 1rem;
+    border-radius: 1em;
+}
+
+@keyframes show {
+    0%{
+        transform: translateY(-150vh);
+    }
+}
+
+
+.modalGeneral{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnModal{
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+
+.btnModal a{
+    margin:0.5rem;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btnRegistrar{
+    background-color: var(--naranja);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--blanco);
+}
+
+.btnCerrar{
+    background-color: var(--azul-oscuro);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--blanco);
+}
+
+
+.infoModal p{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+
+.infoModal1 p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.datosModal p{
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+@media screen and (min-width:768px) {
+    .resModal{
+        padding: 2rem 3rem;
+    }
+
+    .btnModal a{
+        margin:0.5rem;
+        font-size: 16px;
+    }
+    .infoModal p{
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    
+    .datosModal p{
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .infoModal1 p{
+        font-size: 22px;
+    }
 }

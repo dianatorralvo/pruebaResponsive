@@ -24,22 +24,22 @@
         <section id="formulario">
             <h1 class="titulo-registro">REGISTRO USUARIO NUEVO</h1>
             <div class="borde-formulario">
-            <form class="formulario-registro" name="Form" action="index.html" method="get" autocomplete="autocomplete">
+            <form class="formulario-registro" id="form" name="Form" action="pacientes.html" method="get">
                 <div class="datos-cero">
                 <input type="date" type="date" name="name" min="2000-01-01" max="2022-01-01">
-                <input name="nombre" id="nombre" type="text" requiered placeholder="N registro">
+                <input name="nombre" id="nombre" type="text" placeholder="N registro" required pattern="[0-9]+">
                 </div>
                 <div class="titulos">
                     <i class="fa-solid fa-user"></i>
                     <h1>DATOS DEL PACIENTE</h1>
                 </div>
                 <div class="datos">
-                <input name="nombre" id="nombre" type="text" requiered placeholder="Escribe tu nombre">
-                <input name="apellido" id="apellido" type="text" requiered placeholder="Apellidos">
+                <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" required pattern="[A-Za-z]+">
+                <input name="apellido" id="apellido" type="text" placeholder="Apellidos" required pattern="[A-Za-z]+">
                 </div>
                 <div class="datos">
-                <input name="identificacion" id="identificacion" type="text" requiered placeholder="Numero de identificacion">
-                <select name="documento" id="documento">
+                <input name="identificacion" id="identificacion" type="text" placeholder="Numero de identificacion" required pattern="[0-9]+">
+                <select name="documento" id="documento" required>
                     <option value="0">Tipo de documento</option>
                     <option value="1">Cedula</option>
                     <option value="2">Tarjeta de identidad</option>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="datos">
                     <input type="date" type="date" name="name" min="2000-01-01" max="2022-01-01">
-                    <input name="edad" id="edad" type="text" requiered placeholder="Edad">
+                    <input name="edad" id="edad" type="text" placeholder="Edad" required pattern="[0-9]+">
                 </div>
                     <div class="titulos">
                         <i class="fa-solid fa-location-dot"></i>
@@ -1215,12 +1215,12 @@
                     </select>
                 </div>
                 <div class="datos">
-                    <input name="direccion" id="direccion" type="text" requiered placeholder="Direccion">
-                    <input name="email" id="email" type="email" requiered placeholder="Correo">
+                    <input name="direccion" id="direccion" type="text" placeholder="Direccion" required>
+                    <input name="email" id="email" type="email" placeholder="Correo" required>
                 </div>
                 <div class="datos">
-                    <input name="telefono" id="telefono" type="text" requiered placeholder="Telefono">
-                    <input name="celular" id="celular" type="text" requiered placeholder="Celular">
+                    <input name="telefono" id="telefono" type="text" requiered placeholder="Telefono" required pattern="[0-9]+">
+                    <input name="celular" id="celular" type="text" requiered placeholder="Celular" required pattern="[0-9]+">
                 </div>
                     <div class="titulos">
                         <i class="fa-solid fa-heart-pulse"></i>
@@ -1241,7 +1241,7 @@
                         <option value="3">Lorem ipsum</option>
                         <option value="4">Lorem ipsum</option>
                     </select>
-                    <input name="alergia" id="alergia" type="text" requiered placeholder="Alergia">
+                    <input name="alergia" id="alergia" type="text"  placeholder="Alergia" requiered>
                 </div>
                     <label class="titulo-covid" form="prueba">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha sido positiva?</label>
                 <div class="prueba-covid">
@@ -1253,8 +1253,10 @@
                     <input name="prueba" id="prueba" type="radio" checked >NO
                     <input name="prueba" id="prueba" type="radio">SI
                 </div>
+                
             </form>
-            <div class="guardar click"><a href="pacientes.html"><button type="submit">Guardar</a></button>
+            <div class="guardar click">
+                <button form="form" type="submit">Guardar</button>
         </div>
         </section>
     </main>
