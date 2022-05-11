@@ -6,7 +6,7 @@ function ir(){
     if(document.form.password.value==contrasena && document.form.usuario.value==user){
         window.location="dashboard.html";}
     else{
-        alert("Por favor ingresa, usuario y contrasena correctos.");
+        swal("Escribe nombre de usuario y contrasena correctamente");
     }
     
     }
